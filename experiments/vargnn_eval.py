@@ -20,10 +20,10 @@ import pytorch_lightning as pl
 import torch
 from fastmri.data.mri_data import fetch_dir
 from fastmri.data.subsample import create_mask_for_mask_type
-from  pl_modules.humus_module import HUMUSNetModule
+from  model.vargnn_pl import HUMUSNetModule
 
 from data.data_transforms import HUMUSNetDataTransform
-from pl_modules.fastmri_data_module import FastMriDataModule
+from data.fastmri_data_module import FastMriDataModule
 
 # Imports for logging and other utility
 from pytorch_lightning.plugins import DDPPlugin
